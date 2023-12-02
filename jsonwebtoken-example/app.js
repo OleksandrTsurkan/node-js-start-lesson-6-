@@ -18,7 +18,8 @@ try {
   console.log(id);
   const invalidToken =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmI1MzVlYTQwOGIxYmZjMWQ4M2VjZSIsImlhdCI6MTcwMTU0NTc2MSwiZXhwIjozNzc1MTQ1NzYxfQ.ePx1-QSKx_TeB1XQPNmTuBQUef9E5oVYQPS2Ol4HkS0";
-  const result = jwt.verify(invalidToken, SECRET_KEY);
+    const result = jwt.verify(invalidToken, SECRET_KEY);
+    
 } catch (error) {
   console.log(error.message);
 }
